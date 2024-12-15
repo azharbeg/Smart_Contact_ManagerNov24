@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+     <title>Home page</title>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+     
+</head>
+<body>
+    <div id="content text-2xl">
+        <h1 th:text="${name}">welcome to home page.</h1><!--thymleaf use here:->
+           Thymeleaf is a popular "Java template engine" used in Spring MVC web applications for 
+         rendering dynamic HTML content on the server side-->
+         <p>Course Name : <span th:text="${course}"></span></p>
+         <p>GitHub : <span  th:text="${githubRepo}"></span></p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, illum.
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+</body>
+<script>
+    console.log("home page script"); 
+</script>
+<script>
+    console.log("another home page script");
+</script>
+</html>
